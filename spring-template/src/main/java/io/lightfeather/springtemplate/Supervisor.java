@@ -2,18 +2,29 @@ package io.lightfeather.springtemplate;
 
 //POJO
 public class Supervisor {
-    
-    // fields
-    private final long id;
 
-    // constructor
-    public Supervisor(long id) {
+    // fields
+    private int id;
+  
+    // constructors
+    public Supervisor() {
+    }
+    
+    public Supervisor(int id) {
         this.id = id;
     }
-
-    // accessors aka "getters"
-    public long getId() {
+  
+    // setters and getters
+    public int getId() {
         return id;
     }
-
-}
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+  
+    @Override
+      public String toString() {
+          return "Supervisor [id=" + id + "]";
+      }
+  }
