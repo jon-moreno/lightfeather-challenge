@@ -5,13 +5,15 @@ public class Supervisor {
 
     // fields
     private int id;
+    private String firstName;
   
     // constructors
     public Supervisor() {
     }
     
-    public Supervisor(int id) {
+    public Supervisor(int id, String firstName) {
         this.id = id;
+        this.firstName = firstName;
     }
   
     // setters and getters
@@ -21,6 +23,14 @@ public class Supervisor {
     
     public void setId(int id) {
         this.id = id;
+    }
+    
+    public String getFirstName() {
+        return firstName;
+    }
+    
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
   
     @Override
