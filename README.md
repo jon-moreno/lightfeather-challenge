@@ -2,7 +2,9 @@
 ## Running the container
 Similar to the spring-template instructions...
 
-`cd lightfeather-challenge/spring-template`
+`cd lightfeather-challenge/spring-template` 
+
+OR if you download the .zip `cd lightfeather-challenge-main/spring-template`
 
 `sudo docker build --tag=spring-template:latest .`
 
