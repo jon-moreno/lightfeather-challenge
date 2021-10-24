@@ -3,6 +3,9 @@ package io.lightfeather.springtemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 // imports for JSON parsing
 import java.net.URL;
@@ -34,5 +37,10 @@ public class SupervisorController {
 		}
 		return supervisors;
 	}
+
+    @GetMapping("/register")
+	public String register(@RequestParam(value = "supervisorName") String supervisorName) {
+        return "Subscribed to supervisor notifications for " + supervisorName;
+    }
 
 }
